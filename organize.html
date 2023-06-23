@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="organize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Organisateur</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header_content">
+                    <div class="header_content_right">
+                        <div class="header_logo">
+                            <a href="#"><img src="img/events.jpg" alt="event"></a>
+                        </div>
+                    </div>
+                    <div class="header_content_left">
+                        <ul>
+                            <li><a href="index.html">Acceuil</a></li>
+                            <li><a href="about.html">A propos</a></li>
+                            <li><a href="#" class="present">Organisateur</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="index.html">Déconnexion</a></li>
+                        </ul>
+                        <div class="search">
+                            <input type="text" placeholder="Rechercher">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="promotor_space">
+                <div class="container">
+                    <div class="promotor_space_title">
+                        <h1>Espace Organisateur</h1>
+                    </div>
+                    <p class="error"></p>
+                    <div class="form">
+                        
+                        <form action="">
+                            <div class="form_element">
+                                <div class="form_left">
+                                    <input type="text" id="title" placeholder="Titre">
+                                    <textarea name="" id="description" placeholder="Description de l'évènement"></textarea>
+                                    <div class="programm">
+                                        <div class="programm_title">
+                                            <h1>Date & Heure</h1>
+                                        </div>
+                                         <div class="programm_area">
+                                            <label for="start_date">Date de debut</label><input type="date" id="start_date">
+                                            <div class="start_hours">
+                                                <select name="" id="start_hour">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                    <option value="13">13</option>
+                                                    <option value="14">14</option>
+                                                    <option value="15">15</option>
+                                                    <option value="16">16</option>
+                                                    <option value="17">17</option>
+                                                    <option value="18">18</option>
+                                                    <option value="19">19</option>
+                                                    <option value="20">20</option>
+                                                    <option value="21">21</option>
+                                                    <option value="22">22</option>
+                                                    <option value="23">23</option>
+                                                    <option value="24">24</option>
+                                                </select>
+                                                <select name="" id="start_minutes">
+                                                    <option value="00">00</option>
+                                                    <option value="05">05</option>
+                                                    <option value="10">10</option>
+                                                    <option value="15">05</option>
+                                                    <option value="20">20</option>
+                                                    <option value="25">25</option>
+                                                    <option value="30">30</option>
+                                                    <option value="35">35</option>
+                                                    <option value="40">40</option>
+                                                    <option value="45">45</option>
+                                                    <option value="50">50</option>
+                                                    <option value="55">55</option>
+                                                </select>
+                                            </div>
+                                            <label for="end_date">Date de fin</label><input type="date" id="end_date">
+                                            <div class="end_hours">
+                                                <select name="" id="end_hour">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                    <option value="13">13</option>
+                                                    <option value="14">14</option>
+                                                    <option value="15">15</option>
+                                                    <option value="16">16</option>
+                                                    <option value="17">17</option>
+                                                    <option value="18">18</option>
+                                                    <option value="19">19</option>
+                                                    <option value="20">20</option>
+                                                    <option value="21">21</option>
+                                                    <option value="22">22</option>
+                                                    <option value="23">23</option>
+                                                    <option value="24">24</option>
+                                                </select>
+                                                <select name="" id="end_minutes">
+                                                    <option value="00">00</option>
+                                                    <option value="05">05</option>
+                                                    <option value="10">10</option>
+                                                    <option value="15">05</option>
+                                                    <option value="20">20</option>
+                                                    <option value="25">25</option>
+                                                    <option value="30">30</option>
+                                                    <option value="35">35</option>
+                                                    <option value="40">40</option>
+                                                    <option value="45">45</option>
+                                                    <option value="50">50</option>
+                                                    <option value="55">55</option>
+                                                </select>
+                                            </div>
+                                         </div>
+                                    </div>
+                                    <div class="area">
+                                        <div class="area_title">
+                                            <h1>Organisateur</h1>
+                                        </div>
+                                        <div class="area_list">
+                                            <input type="text" placeholder="Nom" id="promotor_name">
+                                            <input type="number" placeholder="Telephone" id="promotor_call">
+                                            <input type="email" placeholder="Adresse e-mail" id="promotor_mail">
+                                        </div>
+                                    </div>
+                                    <div class="area">
+                                        <div class="area_title">
+                                            <h1>Lieu de l'évènement</h1>
+                                        </div>
+                                        <div class="area_list">
+                                            <input type="text" placeholder="Nom du lieu" id="location_name">
+                                            <input type="text" placeholder="Ville" id="location_city">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_right">
+                                    <div class="area">
+                                        <div class="area_title">
+                                            <h1>Tarif de l'évènement</h1>
+                                        </div>
+                                        <div class="area_list">
+                                            <input type="text" placeholder="Tarif" id="tariff">
+                                        </div>
+                                    </div>
+                                    <div class="area">
+                                        <div class="area_title">
+                                            <h1>Image de l'évènement</h1>
+                                        </div>
+                                        <div class="area_list">
+                                            <input type="file" id="file">
+                                        </div>
+                                    </div>
+                                    <div class="area">
+                                        <div class="area_title">
+                                            <h1>Catégories</h1>
+                                        </div>
+                                        <div class="area_list categorie">
+                                            <div class="area_list_item">
+                                                <input type="checkbox" id="arts" value="Arts"><label for="arts">Arts</label>
+                                            </div>
+                                            <div class="area_list_item">
+                                                <input type="checkbox" id="birthday" value="Anniverssaire"><label for="birthday">Anniverssaire</label>
+                                            </div>
+                                            <div class="area_list_item">
+                                                <input type="checkbox" id="bars" value="Bars"><label for="bars">Bars</label>
+                                            </div>
+                                            <div class="area_list_item">
+                                                <input type="checkbox" id="concerts" value="Concerts"><label for="concerts">Concerts</label>
+                                            </div>
+                                            <div class="area_list_item">
+                                                <input type="checkbox" id="conference" value="Conference"><label for="conference">Conference</label>
+                                            </div>
+                                            <div class="area_list_item">
+                                                <input type="checkbox" id="danse" value="Danse"><label for="danse">Danse</label>
+                                            </div>
+                                            <div class="area_list_item">
+                                                <input type="checkbox" id="mode" value="Mode"><label for="mode">Mode</label>
+                                            </div>
+                                            <div class="area_list_item">
+                                                <input type="checkbox" id="sport" value="Sports"><label for="sport">Sports</label>
+                                            </div>
+                                            <div class="area_list_item">
+                                                <input type="checkbox" id="theatre" value="Théatre"><label for="theatre">Théatre</label>
+                                            </div>
+                                            <div class="area_list_item">
+                                                <input type="checkbox" id="touring" value="Tourisme"><label for="touring">Tourisme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="add_button">
+                            <button id="submit">Ajouter</button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="event_list">
+                <div class="container">
+                    <div class="event_list_content">
+                        <a href="#">Voir mes évènements>></a>
+                        <div class="event_list_item">
+                            <ol class="event_list_item_content">
+                                <li></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_content">
+                    <div class="footer_content_item">
+                        <h1>Copyright 2023 A-Event</h1>
+                        <div class="footer_icon">
+                            <a href="facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="whatsappweb.com"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="linkdin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+
+        let button = document.querySelector('#submit')
+        let eventTab = [];
+        const form = document.querySelector('form');
+        if(form){
+            form.addEventListener('submit', (e)=>{
+                event.preventDefault()
+
+                const title = document.querySelector('#title').value;
+                const description = document.querySelector('#description').value;
+                const startDate = document.querySelector('#start_date').value;
+                const startHour = document.querySelector('#start_hour').value;
+                const startMinutes = document.querySelector('#start_minutes').value;
+                const endDate = document.querySelector('#end_date').value;
+                const endHour = document.querySelector('#end_hour').value;
+                const endMinutes = document.querySelector('#end_minutes');
+                const promotorName = document.querySelector('#promotor_name').value;
+                const promotorCall = document.querySelector('#promotor_call').value;
+                const promotorMail = document.querySelector('#promotor_mail').value;
+                const locationName = document.querySelector('#location_name').value;
+                const locationCity = document.querySelector('#location_city').value;
+                const tariff = document.querySelector('#tariff').value;
+                let file = document.querySelector('#file').value;
+
+
+                const type = {} ;
+                const categorie = document.querySelectorAll('.categorie input');
+                if(categorie){
+                    categorie.forEach(item=>{
+                        if(item.checked === true){
+                            type[item.id] = item.value
+                        }
+                    })
+                }
+
+                let errorTag = document.querySelector('.error');
+                errorTag.innerHTML = '';
+
+                if(title==='' || description==='' || startDate==='' || startHour==='' || startMinutes==='' || endDate==='' || endHour==='' || endMinutes==='' ||
+                promotorName==='' || promotorCall==='' || promotorMail==='' || locationName==='' || locationCity==='' || tariff==='' || file==='' || type===''){
+                    errorTag.innerHTML = 'Vous devez remplir tous les champs'
+                    errorTag.classList.add('active')
+                }
+                else{
+                    errorTag.innerHTML = ''
+                    errorTag.classList.remove('active')
+
+                    let eventData = {
+                                'title' : title,
+                                'description' : description,
+                                'startDate' : startDate,
+                                'startHour' : startHour,
+                                'startMinutes' : startMinutes,
+                                'endDate' : endDate,
+                                'endHour' : endHour,
+                                'endMinutes' : endMinutes,
+                                'promotorName' : promotorName,
+                                'promotorCall' : promotorCall,
+                                'promotorMail' : promotorMail,
+                                'locationName' : locationName,
+                                'locationCity' : locationCity,
+                                'tariff' : tariff,
+                                'file' : file,
+                                'type' : type
+                            }
+                            
+                            if(localStorage.getItem('eventTab')===''){
+                                eventTab = []
+                            }else{
+                                eventTab = JSON.parse(localStorage.getItem('eventTab'))
+                            }
+                            eventTab.push(eventData);
+                            localStorage.setItem('eventTab', JSON.stringify(eventTab));
+                }           
+            })
+        }
+                const listContent = document.querySelector('.event_list_content a')
+                const eventList = JSON.parse(localStorage.getItem('eventTab'))
+                let list = ``;
+                if(eventList){
+                    eventList.forEach(item =>{
+                        
+                        list += `
+                                <li>${item.title}</li>
+                        `
+
+                    })
+
+                    listContent.addEventListener('click', ()=>{
+                        event.preventDefault()
+                        document.querySelector('.event_list_item_content').innerHTML = list;
+                    })
+                    
+                }
+                         /*title = ''
+                            description = ''
+                            startDate = ''
+                            start_hour = ''
+                            startMinutes = ''
+                            endDate = ''
+                            endHour = ''
+                            endMinutes = ''
+                            promotorName = ''
+                            promotorCall = ''
+                            promotorMail = ''
+                            locationName = ''
+                            locationCity = ''
+                            tariff = ''
+                            file = ''
+                            option = '' */
+
+        
+    </script>
+</body>
+</html>

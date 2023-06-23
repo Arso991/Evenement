@@ -1,0 +1,233 @@
+:root{
+    --text-color-blue : #297fb8;
+    --bg-color-bluewhite : #80d4f9;
+    --text-color-gray : rgb(92, 92, 92);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    z-index: 1;
+    outline: none;
+}
+
+body{
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+input{
+    display: block;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    height: 5rem;
+}
+
+main{
+    min-height: calc(100vh - (5rem + 10rem));
+}
+
+footer{
+    height: 10rem;
+    background-color: var(--bg-color-bluewhite);
+}
+
+.container{
+    max-width: calc(100% - 5rem);
+    margin: 0 auto;
+}
+
+.header_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem;
+    flex-wrap: wrap;
+}
+
+.header_logo{
+    height: 5rem;
+    width: 5rem;
+}
+
+.header_logo a{
+    display: inline-block;
+    margin-top: 1.5rem;
+}
+
+.header_content_right{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header_content_left{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.header_content_left ul{
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.header_content_left ul li, a{
+    color: var(--text-color-blue);
+}
+
+.search input{
+    padding: 0 1rem;
+    border-radius: 10px;
+    border: none;
+}
+
+.banner_content{
+    background-image: url(img/uneamazone.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20rem;
+}
+
+.banner_content_img{
+    background-color: black;
+    height: 20rem;
+    opacity: .5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_title{
+    color: white;
+    font-weight: 600;
+}
+
+.about_text{
+    padding: 1rem 0;
+    color: var(--text-color-gray);
+}
+
+.about_text_content h1{
+    color: var(--text-color-blue);
+    font-size: 1.3rem;
+}
+
+.about_text_content{
+    line-height: 2rem;
+}
+
+.how{
+    padding-bottom: 3rem;
+}
+
+.how_title h1{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-color-blue);
+}
+
+.how_content{
+    display: flex;
+    justify-content: center;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.how_content_list{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.how_content_list_item{
+    border-top: 2px solid rgb(164, 162, 162);
+    border-bottom: 2px solid rgb(153, 152, 152);
+    text-align: center;
+}
+
+.organise_button{
+    text-align: center;
+    transition: all .5s ease-in-out;
+}
+
+.organise_button a{
+    color: white;
+    padding: .8rem;
+    background-color: var(--text-color-blue);
+}
+
+.organise_button:active{
+    transform: scale(-.01);
+}
+
+.footer_content{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.footer_content_item{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+}
+
+.footer_content_item{
+    color: white;
+}
+
+.footer_icon{
+    letter-spacing: .5rem;
+}
+
+.footer_icon i{
+    font-size: 1.5rem;
+}
+
+.footer_icon a .fa-twitter{
+    color: rgb(58, 112, 236);
+}
+
+.footer_icon a .fa-whatsapp{
+    color: rgb(5, 182, 5);
+}
+
+.footer_icon a .fa-linkedin-in{
+    color: rgb(3, 3, 171);
+}
+
+.footer_icon a .fa-instagram{
+    color: rgb(255, 0, 47);
+}
+
+.present{
+    color: black;
+    border-bottom: 1px solid black;
+}

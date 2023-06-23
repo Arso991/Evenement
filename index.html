@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header_content">
+                    <div class="header_content_right">
+                        <div class="header_logo">
+                            <a href="#"><img src="img/events.jpg" alt="event"></a>
+                        </div>
+                    </div>
+                    <div class="header_content_left">
+                        <ul>
+                            <li><a href="index.html" class="present">Acceuil</a></li>
+                            <li><a href="about.html">A propos</a></li>
+                            <li><a href="#">Organisateur</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">Inscription</a>/<a href="#">Connexion</a></li>
+                        </ul>
+                        <div class="search">
+                            <input type="text" placeholder="Rechercher">
+                        </div>
+                        <div class="menu_icon">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_modal">
+                    <div class="container">
+                        <span class="closeMenu">&times;</span>
+                        <div class="menu_modal_content">
+                            <div class="menu_display">
+                                <ul>
+                                    <li><a href="index.html" class="present">Acceuil</a></li>
+                                    <li><a href="about.html">A propos</a></li>
+                                    <li><a href="#">Organisateur</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="#">Inscription</a>/<a href="#">Connexion</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="modal">
+                <!--<span class="clobtn">&times;</span>
+                <div class="container">
+                    <div class="modal_content">
+                        <div class="modal_content_top">
+                            <div class="modal_content_top_left">
+                                <div class="modal_content_top_left_img">
+                                    <img src="img/FwrJ8R_XsAARhva.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="modal_content_top_right">
+                                <div class="modal_content_top_right_title">
+                                    <h1>Titre</h1>
+                                </div>
+                                <div class="modal_content_top_right_description">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde distinctio iste dolorem. Dolorem sequi consequatur voluptatum natus expedita!</p>
+                                </div>
+                                <div class="modal_content_top_right_date">
+                                    <h1>Date</h1>
+                                    <h2>Heure</h2>
+                                </div>
+                                <div class="modal_content_top_right_location">
+                                    <h1>Lieu</h1>
+                                    <h2>Ville</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal_content_bottom">
+                            <div class="modal_content_bottom_left">
+                                <div class="modal_content_bottom_left_promotor">
+                                    <h1>Organisateur</h1>
+                                    <p>Nom</p> 
+                                    <p>Numéro</p>
+                                </div>
+                            </div>
+                            <div class="modal_content_bottom_right">
+                                <div class="modal_content_bottom_right_decompt">
+                                    <p>Décompte</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <section class="sort">
+                <div class="container">
+                    <div class="sort_content">
+                        <div class="sort_content_left">
+                            <select name="categorie" id="categorie">
+                                <option value="Catégorie">Catégorie</option>
+                                <option value="Art">Art</option>
+                                <option value="Musique">Musique</option>
+                            </select>
+                        </div>
+                        <div class="sort_content_right">
+                            <select name="place" id="place">
+                                <option value="Localisation">Localisation</option>
+                                <option value="Cotonou">Cotonou</option>
+                                <option value="Calavi">Calavi</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="sort_moment">
+                        <div class="sort_moment_item">
+                            <input type="radio" name="event_moment" value="passed" id="passed"><label
+                                for="passed">Passés</label>
+                        </div>
+                        <div class="sort_moment_item">
+                            <input type="radio" name="event_moment" value="now" id="now"><label for="now">En
+                                cours</label>
+                        </div>
+                        <div class="sort_moment_item">
+                            <input type="radio" name="event_moment" value="come" id="come"><label for="passed">A
+                                venir</label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="event">
+                <div class="container">
+                    <h1 class="event_title">Evènements</h1>
+                    <div class="event_list_container">
+                        <div class="event_list">
+                            <!--<div class="event_list_item">
+                                    <div class="event_list_item_img">
+                                        <img src="img/FwrJ8R_XsAARhva.jpg" alt="event">
+                                    </div>
+                                    <h1 class="title">Titre</h1>
+                                    <h2 class="date">Date</h2>
+                                    <p class="hour">Heure</p>
+                                    <p class="place">Lieu</p>
+                                    <div class="extra">
+                                        <div class="share"><i class="fa-solid fa-share-nodes"></i></div>
+                                        <div class="more"><a href="#">Plus</a></div>
+                                    </div>
+                                </div>-->
+                        </div>
+                    </div>
+                    <div class="more_event">
+                        <button class="more_button">Plus d'évenements</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_content">
+                    <div class="footer_content_item">
+                        <h1>Copyright 2023 A-Event</h1>
+                        <div class="footer_icon">
+                            <a href="facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="whatsappweb.com"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="linkdin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        let menuIcon = document.querySelector('.menu_icon');
+
+        /* menuIcon.addEventListener('click', ()=>{
+            event.preventDefault();
+            document.querySelector('.menu_modal').style.display = 'block'
+        }) */
+
+        const eventAdd = JSON.parse(localStorage.getItem('eventTab'));
+        let schema = ``;
+        let eventList = document.querySelector('.event_list')
+        if (eventAdd) {
+            eventAdd.forEach(item => {
+                let image = item.file
+                let imageSrc = image.slice(12)
+
+                schema += `
+                        <div class="event_list_item">
+                            <div class="event_list_item_img">
+                                <img src="img/${imageSrc}" alt="event">
+                            </div>
+                            <h1 class="title">${item.title}</h1>
+                            <h2 class="date">${item.startDate} au ${item.endDate}</h2>
+                            <p class="hour">${item.startHour}:${item.startMinutes} à ${item.endHour}:${item.endMinutes}</p>
+                            <p class="place">${item.locationName}, ${item.locationCity}</p>
+                            <div class="extra">
+                                <div class="share"><i class="fa-solid fa-share-nodes"></i></div>
+                                <div class="more"><a href="#">Plus</a></div>
+                            </div>
+                        </div>
+            `
+            })
+            eventList.innerHTML = schema;
+        }
+
+        let eventMore = document.querySelectorAll('.event_list a');
+        let modal = document.querySelector('.modal'), schemaModal;
+        if (eventMore) {
+
+            eventMore.forEach(item => {
+
+                item.addEventListener('click', () => {
+
+                    event.preventDefault();
+                    let itemParent = item.closest('.event_list_item');
+
+                    itemParentContent = itemParent.querySelector('.title').innerHTML;
+
+                    eventAdd.forEach(index => {
+
+                        if (itemParentContent == index.title) {
+
+                            schemaModal = `
+                                        <span class="closebtn">&times;</span>
+                                        <div class="container">
+                                            <div class="modal_content">
+                                                <div class="modal_content_top">
+                                                    <div class="modal_content_top_left">
+                                                        <div class="modal_content_top_left_img">
+                                                            <img src="img/${index.file.slice(12)}" alt="event">
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal_content_top_right">
+                                                        <div class="modal_content_top_right_title">
+                                                            <h1>${index.title}</h1>
+                                                        </div>
+                                                        <div class="modal_content_top_right_description">
+                                                            <p>${index.description}</p>
+                                                        </div>
+                                                        <div class="modal_content_top_right_date">
+                                                            <h1>${index.startDate} au ${index.endDate}</h1>
+                                                            <h2>${index.startHour}:${index.startMinutes} à ${index.endHour}:${index.endMinutes}</h2>
+                                                        </div>
+                                                        <div class="modal_content_top_right_location">
+                                                            <h1>${index.locationName} </h1>
+                                                            <h2>${index.locationCity} </h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal_content_bottom">
+                                                    <div class="modal_content_bottom_left">
+                                                        <div class="modal_content_bottom_left_promotor">
+                                                            <h1>Organisateur</h1>
+                                                            <p>${index.promotorName}</p> 
+                                                            <p>${index.promotorCall}</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal_content_bottom_right">
+                                                        <div class="modal_content_bottom_right_decompt">
+                                                            <p>${decompt}</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        `
+
+                        }
+
+                    })
+
+                    modal.innerHTML = schemaModal;
+                    modal.style.display = 'block'
+                    modalParent = modal.closest('.modal');
+                    closeBtn = modalParent.querySelector('.closebtn');
+                    closeBtn.addEventListener('click', () => {
+                        modal.classList.add = 'close'
+                        modal.style.display = 'none'
+                    })
+
+                })
+            })
+
+        }
+                            let decompt;
+                            decomptParent = modal.closest('.modal_content_bottom_right_decompt');
+                            chrono = () => {
+                                const now = new Date().getTime();
+                                const countDown = new Date(index.startDate).getTime();
+                                const distanceTime = countDown - now;
+
+                                const days = Math.floor(distanceTime / (1000 * 60 * 60 * 24));
+
+                                const hours = Math.floor((distanceTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+                                const minutes = Math.floor((distanceTime % (1000 * 60 * 60)) / (1000 * 60));
+
+                                const seconds = Math.floor((distanceTime % (1000 * 60)) / (1000));
+
+                                decompt = `${days}jours ${hours}h ${minutes}min ${seconds}s`
+                            }
+                            /* const intervall = setInterval(() => {
+                                chrono()
+                            }, 1000) */
+
+
+
+
+
+    </script>
+</body>
+
+</html>
