@@ -29,6 +29,9 @@
                         <div class="search">
                             <input type="text" placeholder="Rechercher">
                         </div>
+                        <div class="menu_icon">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -182,34 +185,34 @@
                                             <h1>Catégories</h1>
                                         </div>
                                         <div class="area_list categorie">
-                                            <div class="area_list_item">
+                                            <div class="area_list_item categorie_input">
                                                 <input type="checkbox" id="arts" value="Arts"><label for="arts">Arts</label>
                                             </div>
-                                            <div class="area_list_item">
+                                            <div class="area_list_item categorie_input">
                                                 <input type="checkbox" id="birthday" value="Anniverssaire"><label for="birthday">Anniverssaire</label>
                                             </div>
-                                            <div class="area_list_item">
+                                            <div class="area_list_item categorie_input">
                                                 <input type="checkbox" id="bars" value="Bars"><label for="bars">Bars</label>
                                             </div>
-                                            <div class="area_list_item">
+                                            <div class="area_list_item categorie_input">
                                                 <input type="checkbox" id="concerts" value="Concerts"><label for="concerts">Concerts</label>
                                             </div>
-                                            <div class="area_list_item">
+                                            <div class="area_list_item categorie_input">
                                                 <input type="checkbox" id="conference" value="Conference"><label for="conference">Conference</label>
                                             </div>
-                                            <div class="area_list_item">
+                                            <div class="area_list_item categorie_input">
                                                 <input type="checkbox" id="danse" value="Danse"><label for="danse">Danse</label>
                                             </div>
-                                            <div class="area_list_item">
+                                            <div class="area_list_item categorie_input">
                                                 <input type="checkbox" id="mode" value="Mode"><label for="mode">Mode</label>
                                             </div>
-                                            <div class="area_list_item">
+                                            <div class="area_list_item categorie_input">
                                                 <input type="checkbox" id="sport" value="Sports"><label for="sport">Sports</label>
                                             </div>
-                                            <div class="area_list_item">
+                                            <div class="area_list_item categorie_input">
                                                 <input type="checkbox" id="theatre" value="Théatre"><label for="theatre">Théatre</label>
                                             </div>
-                                            <div class="area_list_item">
+                                            <div class="area_list_item categorie_input">
                                                 <input type="checkbox" id="touring" value="Tourisme"><label for="touring">Tourisme</label>
                                             </div>
                                         </div>
@@ -228,9 +231,28 @@
                     <div class="event_list_content">
                         <a href="#">Voir mes évènements>></a>
                         <div class="event_list_item">
-                            <ol class="event_list_item_content">
+                            <!-- <table>
+                                <thead>
+                                    <th>Titre</th>
+                                    <th>Catégories</th>
+                                    <th>Date</th>
+                                    <th>Lieu</th>
+                                    <th>Actions</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Festizik</td>
+                                        <td>Festizik</td>
+                                        <td>Festizik</td>
+                                        <td>Festizik</td>
+                                        <td>Festizik</td>
+                                        <td>Festizik</td>
+                                    </tr>
+                                </tbody>
+                            </table> -->
+                            <!-- <ol class="event_list_item_content">
                                 <li></li>
-                            </ol>
+                            </ol> -->
                         </div>
                     </div>
                 </div>
@@ -280,11 +302,13 @@
 
 
                 const type = {} ;
+                let option
                 const categorie = document.querySelectorAll('.categorie input');
                 if(categorie){
                     categorie.forEach(item=>{
                         if(item.checked === true){
-                            type[item.id] = item.value
+                            option = item.id;
+                            type[option] = item.value
                         }
                     })
                 }
@@ -334,18 +358,38 @@
                 const eventList = JSON.parse(localStorage.getItem('eventTab'))
                 let list = ``;
                 if(eventList){
-                    eventList.forEach(item =>{
+                    eventList.forEach((item, index) =>{
+                        obj = item.type;
+                        objStr = JSON.stringify(obj);
+                        console.log(objStr.substring(0, 1));
                         
                         list += `
-                                <li>${item.title}</li>
+                                    <tr>
+                                        <td>${item.title}</td>
+                                        <td>${objStr}</td>
+                                        <td>${item.startDate}</td>
+                                        <td>${item.locationName}</td>
+                                        <td><button onclick="deleteEvent(${index})">Supprimer</button><button onclick="editEvent(${index})">Editer</button></td>
+                                    </tr>
                         `
 
                     })
 
-                    listContent.addEventListener('click', ()=>{
-                        event.preventDefault()
-                        document.querySelector('.event_list_item_content').innerHTML = list;
-                    })
+                    const schema = `
+                            <table>
+                                <thead>
+                                    <th>Titre</th>
+                                    <th>Catégories</th>
+                                    <th>Date</th>
+                                    <th>Lieu</th>
+                                    <th>Actions</th>
+                                </thead>
+                                <tbody>
+                                    ${list}
+                                </tbody>
+                            </table>
+                    `
+                        document.querySelector('.event_list_item').innerHTML = schema;
                     
                 }
                          /*title = ''

@@ -35,6 +35,7 @@ img{
 
 input{
     display: block;
+    width: 100%;
 }
 
 .wrapper{
@@ -64,8 +65,6 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 6rem;
-    flex-wrap: wrap;
 }
 
 .header_logo{
@@ -81,13 +80,11 @@ footer{
 .header_content_right{
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .header_content_left{
     display: flex;
     gap: 2rem;
-    flex-wrap: wrap;
 }
 
 .header_content_left ul li, a{
@@ -97,13 +94,13 @@ footer{
 .header_content_left ul{
     display: flex;
     gap: 1.5rem;
-    flex-wrap: wrap;
 }
 
 .search input{
     padding: 0 1rem;
     border-radius: 10px;
-    border: none;
+    border: 1px solid var(--text-color-blue);
+    width: 100%;
 }
 
 .promotor_space{
@@ -138,6 +135,7 @@ form{
 
 .form_element{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 5rem;
 }
@@ -185,6 +183,10 @@ textarea, .form_left input{
     display: flex;
     flex-wrap: nowrap;
     gap: .5rem;
+}
+
+.categorie_input input{
+    width: inherit;
 }
 
 .add_button{
@@ -263,4 +265,26 @@ textarea, .form_left input{
 .present{
     color: black;
     border-bottom: 1px solid black;
+}
+
+table td{
+    padding: 0 .5rem;
+}
+
+@media (min-width:950px){
+    .menu_icon{
+        display: none;
+    }
+}
+
+@media (max-width:950px){
+    .header_content_left ul{
+        display: none;
+    }
+}
+
+@media (max-width:320px){
+    .promotor_space_title h1 {
+        font-size: 1rem;
+    }
 }

@@ -35,6 +35,11 @@ img{
 
 input{
     display: block;
+    width: 100%;
+}
+
+textarea{
+    width: 100%;
 }
 
 .wrapper{
@@ -56,16 +61,19 @@ footer{
 }
 
 .container{
-    max-width: calc(100% - 5rem);
-    margin: 0 auto;
+    /* max-width: calc(100% - 5rem);
+    margin: 0 auto; */
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1140px;
 }
 
 .header_content{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 6rem;
-    flex-wrap: wrap;
 }
 
 .header_logo{
@@ -81,13 +89,11 @@ footer{
 .header_content_right{
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .header_content_left{
     display: flex;
     gap: 2rem;
-    flex-wrap: wrap;
 }
 
 .header_content_left ul li, a{
@@ -97,25 +103,23 @@ footer{
 .header_content_left ul{
     display: flex;
     gap: 1.5rem;
-    flex-wrap: wrap;
 }
 
 .search input{
     padding: 0 1rem;
     border-radius: 10px;
-    border: none;
+    border: 1px solid var(--text-color-blue);
 }
 
 .banner_content_top{
     display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
+    justify-content: center;
     align-items: center;
 }
 
 .banner_content_top_left{
     line-height: 1.5rem;
-    max-width: calc(100% - 40rem);
+    max-width: calc(100% - 30rem);
 }
 
 .banner_content_top_left h1{
@@ -156,10 +160,11 @@ form{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    width: 50rem;
 }
 
 form input, textarea{
-    width: 25rem;
+    width: 100%;
     padding: 1rem;
     border-radius: 10px;
     border: 1px solid var(--text-color-blue);
@@ -232,4 +237,26 @@ form .form_button button:active{
 .present{
     color: black;
     border-bottom: 1px solid black;
+}
+
+@media (min-width:950px){
+    .menu_icon{
+        display: none;
+    }
+}
+
+@media (max-width:950px){
+    .header_content_left ul{
+        display: none;
+    }
+}
+
+@media (max-width:850px){
+    .banner_content_top_left{
+        max-width: calc(100% - 10rem);
+    }
+
+    .banner_content_top_left {
+        font-size: 1rem;
+    }
 }

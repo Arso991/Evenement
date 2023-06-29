@@ -407,3 +407,18 @@ button{
         gap: 1rem;
     }
 }
+
+@media (max-width:450px){
+    .sort_moment{
+        flex-wrap: nowrap;
+        gap: 1rem;
+    }
+
+    .header_content_left {
+        flex-wrap: nowrap
+    }
+
+    .header_content {
+        flex-wrap: nowrap;
+    }
+}
